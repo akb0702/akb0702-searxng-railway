@@ -1,0 +1,26 @@
+use_default_settings: true
+
+   server:
+     secret_key: "REPLACE_ME_WITH_RANDOM_STRING"
+     limiter: false
+     public_instance: false
+     image_proxy: false
+     method: "GET"
+     bind_address: "0.0.0.0"
+     port: 8080
+
+   search:
+     safe_search: 0
+     autocomplete: ""
+     default_lang: "en"
+     formats:
+       - html
+       - json
+
+   engines:
+     - name: radio browser
+       disabled: true
+     - name: ahmia
+       disabled: true
+     - name: torch
+       disabled: true
